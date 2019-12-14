@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:textColor="#B40C2D"
+        android:textSize="50dp"
+        android:layout_marginBottom="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="user"
+            android:textSize="30dp"
+            android:textColor="#151615"/>
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nhap username"
+            android:layout_marginLeft="20dp"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_account_box_black_24dp"
+            android:textSize="30dp"/>
+    </LinearLayout><LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pass"
+            android:textSize="30dp"
+            android:textColor="#151615"/>
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="nhap pass"
+            android:layout_marginLeft="16dp"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btndangnhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dang nhap"
+        android:textSize="20dp"
+        android:background="#52A099"/>
+
+
+
+
+
+</LinearLayout>
